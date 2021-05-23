@@ -6,6 +6,7 @@ def bino2(n, k):
                 B[i][j] = 1
             else:
                 B[i][j] = B[i - 1][j - 1] + B[i - 1][j]
+    return B[n][k]
     
 n = 10
 for i in range(n + 1):
